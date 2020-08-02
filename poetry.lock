@@ -423,6 +423,17 @@ dev = ["pre-commit", "tox"]
 
 [[package]]
 category = "dev"
+description = "A script to run docker-compose.yml using podman"
+name = "podman-compose"
+optional = false
+python-versions = "*"
+version = "0.1.5"
+
+[package.dependencies]
+pyyaml = "*"
+
+[[package]]
+category = "dev"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
 name = "pre-commit"
 optional = false
@@ -749,7 +760,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "7ced4a9d5035751d08e44d96ad86203704bdd86a416af4255735b65ea5cfd20c"
+content-hash = "bfb2853988d55f23d5490786621e3322de47039c422f41d34fcb79c7fed55faa"
 lock-version = "1.0"
 python-versions = ">=3.6.1"
 
@@ -1009,6 +1020,10 @@ pillow = [
 pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
     {file = "pluggy-0.13.1.tar.gz", hash = "sha256:15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0"},
+]
+podman-compose = [
+    {file = "podman-compose-0.1.5.tar.gz", hash = "sha256:fb229362f188980ea3fbdee2a25d0a2dd6a0b886d925d5213e22e09f1062ebe9"},
+    {file = "podman_compose-0.1.5-py2.py3-none-any.whl", hash = "sha256:c4c03066f0b1254bad87df87cf2107b51b78a8a75f1550ee5dfa674b9ebaeb18"},
 ]
 pre-commit = [
     {file = "pre_commit-2.6.0-py2.py3-none-any.whl", hash = "sha256:e8b1315c585052e729ab7e99dcca5698266bedce9067d21dc909c23e3ceed626"},
