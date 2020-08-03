@@ -1,3 +1,4 @@
+from app import views as app_views
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
@@ -17,6 +18,9 @@ urlpatterns = [
     path("users/", include("infinity_tracker.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
+    path("Alive", app_views.alive),
+    path("manifest", app_views.default_handler),
+    path("systems/", include("app.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS
