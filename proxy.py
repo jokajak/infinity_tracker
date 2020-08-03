@@ -108,7 +108,7 @@ class ProxyRequestHandler(BaseHTTPRequestHandler):
                     ],
                     stdin=p1.stdout,
                     stderr=PIPE,
-                )  # NOQA
+                )
                 p2.communicate()
 
         self.wfile.write(
@@ -298,29 +298,27 @@ class ProxyRequestHandler(BaseHTTPRequestHandler):
             return "\n".join(
                 "%-20s %s" % (k, v)
                 for k, v in urlparse.parse_qsl(s, keep_blank_values=True)
-            )  # NOQA
+            )
 
         req_header_text = "%s %s %s\n%s" % (
             req.command,
             req.path,
             req.request_version,
             req.headers,
-        )  # NOQA
+        )
         res_header_text = "%s %d %s\n%s" % (
             res.response_version,
             res.status,
             res.reason,
             res.headers,
-        )  # NOQA
+        )
 
         print(with_color(33, req_header_text))
 
         u = urlparse.urlsplit(req.path)
         if u.query:
             query_text = parse_qsl(u.query)
-            print(
-                with_color(32, "==== QUERY PARAMETERS ====\n%s\n" % query_text)
-            )  # NOQA
+            print(with_color(32, "==== QUERY PARAMETERS ====\n%s\n" % query_text))
 
         cookie = req.headers.get("Cookie", "")
         if cookie:
@@ -349,16 +347,14 @@ class ProxyRequestHandler(BaseHTTPRequestHandler):
                         req_body_text = "%s\n(%d lines)" % (
                             "\n".join(lines[:50]),
                             len(lines),
-                        )  # NOQA
+                        )
                 except ValueError:
                     req_body_text = req_body
             elif len(req_body) < 1024:
                 req_body_text = req_body
 
             if req_body_text:
-                print(
-                    with_color(32, "==== REQUEST BODY ====\n%s\n" % req_body_text)
-                )  # NOQA
+                print(with_color(32, "==== REQUEST BODY ====\n%s\n" % req_body_text))
 
         print(with_color(36, res_header_text))
 

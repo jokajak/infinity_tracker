@@ -64,7 +64,7 @@ def status_handler(update_text, sn="Unknown"):
         return
     try:
         root = ET.fromstring(update_text)
-    except Exception as e:  # NOQA
+    except Exception:
         logger.exception("Failed to parse request: %s", update_text)
         return
     sn = _escape_tag(sn)
@@ -186,7 +186,7 @@ def systems_status_save_handler(req, req_body, res, res_body, sn):
                 logger.debug("Remote changes")
             else:
                 logger.debug("No remote changes")
-        except Exception as e:  # NOQA
+        except Exception:
             logger.exception("Failed to parse response: %s", res_body)
     return True
 
