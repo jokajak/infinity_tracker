@@ -10,6 +10,18 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:12.3
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: github_actions
+        ports:
+          - 5432:5432
+        # needed because the postgres container does not provide a healtcheck
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+
     strategy:
       max-parallel: 4
       matrix:
@@ -21,6 +33,8 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
+    - name: psycopg2 prerequisites
+      run: sudo apt-get install python-dev libpq-dev
     - name: Install Poetry
       uses: dschep/install-poetry-action@v1.2
 
@@ -38,6 +52,17 @@ jobs:
         poetry config virtualenvs.in-project false
         poetry config virtualenvs.path ~/.virtualenvs
 
-    - name: Install Dependencies
+    - name: Install Python Dependencies
       if: steps.cache.outputs.cache-hit != 'true'
       run: poetry install
+
+    - name: Run migrations
+      run: poetry run manage.py migrate
+
+    - name: Test with pytest
+      env:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_DB: github_actions
+        DATABASE_URL: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5432/${POSTGRES_DB}"
+      run: poetry run pytest --cov . -n 2
