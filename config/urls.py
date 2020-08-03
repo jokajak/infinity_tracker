@@ -1,10 +1,10 @@
-from app import views as app_views
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from django.views import defaults as default_views
 from django.views.generic import TemplateView
+from proxy import views as proxy_views
 from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
@@ -18,9 +18,9 @@ urlpatterns = [
     path("users/", include("infinity_tracker.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
-    path("Alive", app_views.alive),
-    path("manifest", app_views.default_handler),
-    path("systems/", include("app.urls")),
+    path("Alive", proxy_views.alive),
+    path("manifest", proxy_views.default_handler),
+    path("systems/", include("proxy.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS
