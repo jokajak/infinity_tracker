@@ -5,6 +5,11 @@ on:
     branches: [ develop ]
   pull_request:
     branches: [ develop ]
+env:
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_DB: github_actions
+  DATABASE_URL: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5432/${POSTGRES_DB}"
 
 jobs:
   build:
@@ -13,10 +18,6 @@ jobs:
     services:
       postgres:
         image: postgres:12.3
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_DB: github_actions
         ports:
           - 5432:5432
         # needed because the postgres container does not provide a healtcheck
@@ -26,6 +27,9 @@ jobs:
       max-parallel: 4
       matrix:
         python-version: [3.6, 3.7, 3.8]
+
+    env:
+      USE_DOCKER: no
 
     steps:
     - uses: actions/checkout@v2
@@ -62,17 +66,7 @@ jobs:
       run: poetry install
 
     - name: Run migrations
-      env:
-        POSTGRES_USER: postgres
-        POSTGRES_PASSWORD: postgres
-        POSTGRES_DB: github_actions
-        DATABASE_URL: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5432/${POSTGRES_DB}"
       run: poetry run ./manage.py migrate
 
     - name: Test with pytest
-      env:
-        POSTGRES_USER: postgres
-        POSTGRES_PASSWORD: postgres
-        POSTGRES_DB: github_actions
-        DATABASE_URL: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5432/${POSTGRES_DB}"
       run: poetry run pytest --cov . -n 2
