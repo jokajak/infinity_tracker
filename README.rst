@@ -19,6 +19,14 @@ Previously leveraged https://github.com/inaz2/proxy2
 
 :License: Apache Software License 2.0
 
+This web application is intended to provide a mobile-friendly website for managing a Carrier Infinity HVAC system. Goals:
+
+* Mobile friendly website for managing a Carrier Infinity HVAC system
+  * Specify arbitrary schedules
+* Support management from Carrier MyInfinity service
+* Support HomeAssistant automation
+* Full test coverage
+* Full type annotations
 
 Settings
 --------
