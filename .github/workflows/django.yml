@@ -41,6 +41,3 @@ jobs:
     - name: Install Dependencies
       if: steps.cache.outputs.cache-hit != 'true'
       run: poetry install
-
-    - name: Code Quality
-      run: poetry run black . --check
