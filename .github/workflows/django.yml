@@ -63,7 +63,7 @@ jobs:
       run: poetry install
 
     - name: Run migrations
-      run: poetry run manage.py migrate
+      run: poetry run ./manage.py migrate
 
     - name: Test with pytest
       env:
