@@ -9,7 +9,13 @@ Carrier Infinity Management
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
      :target: https://github.com/ambv/black
      :alt: Black code style
+.. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   :target: https://github.com/pre-commit/pre-commit
+      :alt: pre-commit
 
+Inspired by infinitude (https://github.com/nebulous/infinitude/). Please give them all credit for the idea.
+
+Previously leveraged https://github.com/inaz2/proxy2
 
 :License: Apache Software License 2.0
 
@@ -66,9 +72,6 @@ Live reloading and Sass CSS compilation
 Moved to `Live reloading and SASS compilation`_.
 
 .. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
-
-
-
 
 
 Deployment
