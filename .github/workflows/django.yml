@@ -62,6 +62,11 @@ jobs:
       run: poetry install
 
     - name: Run migrations
+      env:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_DB: github_actions
+        DATABASE_URL: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@localhost:5432/${POSTGRES_DB}"
       run: poetry run ./manage.py migrate
 
     - name: Test with pytest
