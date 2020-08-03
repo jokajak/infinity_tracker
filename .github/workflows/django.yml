@@ -20,6 +20,10 @@ jobs:
         image: postgres:12.3
         ports:
           - 5432:5432
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: github_actions
         # needed because the postgres container does not provide a healtcheck
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
