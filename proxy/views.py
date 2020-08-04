@@ -85,7 +85,7 @@ def systems_dealer(request, serial):
 
 
 @csrf_exempt
-def default_handler(request, path):
+def default_handler(request, path=None):
     """Handle all other requests
 
     This view handles all other request types
