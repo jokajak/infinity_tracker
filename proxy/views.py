@@ -70,6 +70,21 @@ def systems_profile(request, serial):
 
 
 @csrf_exempt
+def systems_status(request, serial):
+    """Handle system status posts.
+
+    This view handles processing system status updates by the HVAC unit.
+    """
+    r = proxy_request(request)
+    response = HttpResponse(
+        content=r.content,
+        status=r.status_code,
+        content_type=r.headers.get("Content-Type"),
+    )
+    return response
+
+
+@csrf_exempt
 def systems_dealer(request, serial):
     """Handle system dealer posts.
 
