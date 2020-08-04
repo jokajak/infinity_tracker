@@ -38,7 +38,7 @@ This application handles modeling an HVAC system. It is responsible for synchron
 proxy
 '''''
 
-This application handles the traffic coming from the HVAC system. It leverages models from the [app](#app) application.
+This application handles the traffic coming from the HVAC system. It leverages models from the [app](#app) application. Currently does not modify the responses.
 
 Indices and tables
 ==================
