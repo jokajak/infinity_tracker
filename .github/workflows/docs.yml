@@ -39,9 +39,12 @@ jobs:
     - name: Install Python Dependencies
       run: poetry install
 
+    - name: Copy requirements into docs for sphinx-action
+      run: cp -r requirements docs/
     # Standard drop-in approach that should work for most people.
     - uses: ammaraskar/sphinx-action@master
       with:
+        pre-build-command: "pip install -r ./requirements/local.txt -r ./requirements/production.txt"
         docs-folder: "docs/"
     # Great extra actions to compose with:
     # Create an artifact of the html output.
