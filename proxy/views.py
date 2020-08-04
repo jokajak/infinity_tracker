@@ -36,7 +36,6 @@ def alive(request):
         status=r.status_code,
         content_type=r.headers.get("Content-Type"),
     )
-    logger.info("Response: {response}".format(response=response))
     return response
 
 
@@ -52,7 +51,6 @@ def systems_overview(request, serial):
         status=r.status_code,
         content_type=r.headers.get("Content-Type"),
     )
-    logger.info("Response: {response}".format(response=response))
     return response
 
 
@@ -68,7 +66,6 @@ def systems_profile(request, serial):
         status=r.status_code,
         content_type=r.headers.get("Content-Type"),
     )
-    logger.info("Response: {response}".format(response=response))
     return response
 
 
@@ -84,7 +81,6 @@ def systems_dealer(request, serial):
         status=r.status_code,
         content_type=r.headers.get("Content-Type"),
     )
-    logger.info("Response: {response}".format(response=response))
     return response
 
 
@@ -101,5 +97,4 @@ def default_handler(request, path):
         status=r.status_code,
         content_type=r.headers.get("Content-Type"),
     )
-    logger.info("Response: {response}".format(response=response))
     return response
