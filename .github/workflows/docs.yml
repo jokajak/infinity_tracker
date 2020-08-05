@@ -38,6 +38,9 @@ jobs:
     - name: Install Python Dependencies
       run: poetry install
 
+    - name: Ensure sphinx is installed
+      run: poetry add sphinx
+
     - name: Build documentation
       run: make -C docs html
 
