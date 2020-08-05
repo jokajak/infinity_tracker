@@ -11,6 +11,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      USE_DOCKER: no
+
     steps:
     - uses: actions/checkout@v2
     - name: Set up newest Python
