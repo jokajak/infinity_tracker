@@ -64,12 +64,6 @@ jobs:
         poetry config virtualenvs.in-project false
         poetry config virtualenvs.path ~/.virtualenvs
 
-    - name: Output current working directory contents
-      run: ls -la
-
-    - name: Output current path
-      run: pwd
-
     - name: Install Python Dependencies
       run: poetry install
 
