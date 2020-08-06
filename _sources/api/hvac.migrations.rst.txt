@@ -1,0 +1,10 @@
+hvac.migrations package
+=======================
+
+Module contents
+---------------
+
+.. automodule:: hvac.migrations
+   :members:
+   :undoc-members:
+   :show-inheritance:

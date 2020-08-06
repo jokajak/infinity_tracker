@@ -1,0 +1,62 @@
+hvac package
+============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   hvac.migrations
+
+Submodules
+----------
+
+hvac.admin module
+-----------------
+
+.. automodule:: hvac.admin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+hvac.apps module
+----------------
+
+.. automodule:: hvac.apps
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+hvac.models module
+------------------
+
+.. automodule:: hvac.models
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+hvac.tests module
+-----------------
+
+.. automodule:: hvac.tests
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+hvac.views module
+-----------------
+
+.. automodule:: hvac.views
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: hvac
+   :members:
+   :undoc-members:
+   :show-inheritance:

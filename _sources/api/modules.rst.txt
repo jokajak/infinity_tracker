@@ -1,0 +1,7 @@
+infinity_tracker
+================
+
+.. toctree::
+   :maxdepth: 4
+
+   infinity_tracker

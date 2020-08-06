@@ -1,0 +1,32 @@
+infinity\_tracker package
+=========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   infinity_tracker.contrib
+   infinity_tracker.users
+   infinity_tracker.utils
+
+Submodules
+----------
+
+infinity\_tracker.conftest module
+---------------------------------
+
+.. automodule:: infinity_tracker.conftest
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: infinity_tracker
+   :members:
+   :undoc-members:
+   :show-inheritance:

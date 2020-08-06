@@ -1,0 +1,70 @@
+proxy package
+=============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   proxy.migrations
+
+Submodules
+----------
+
+proxy.admin module
+------------------
+
+.. automodule:: proxy.admin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+proxy.apps module
+-----------------
+
+.. automodule:: proxy.apps
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+proxy.models module
+-------------------
+
+.. automodule:: proxy.models
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+proxy.tests module
+------------------
+
+.. automodule:: proxy.tests
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+proxy.urls module
+-----------------
+
+.. automodule:: proxy.urls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+proxy.views module
+------------------
+
+.. automodule:: proxy.views
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: proxy
+   :members:
+   :undoc-members:
+   :show-inheritance:

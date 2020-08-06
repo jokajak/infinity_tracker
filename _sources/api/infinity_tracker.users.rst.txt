@@ -1,0 +1,79 @@
+infinity\_tracker.users package
+===============================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   infinity_tracker.users.migrations
+   infinity_tracker.users.tests
+
+Submodules
+----------
+
+infinity\_tracker.users.adapters module
+---------------------------------------
+
+.. automodule:: infinity_tracker.users.adapters
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+infinity\_tracker.users.admin module
+------------------------------------
+
+.. automodule:: infinity_tracker.users.admin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+infinity\_tracker.users.apps module
+-----------------------------------
+
+.. automodule:: infinity_tracker.users.apps
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+infinity\_tracker.users.forms module
+------------------------------------
+
+.. automodule:: infinity_tracker.users.forms
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+infinity\_tracker.users.models module
+-------------------------------------
+
+.. automodule:: infinity_tracker.users.models
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+infinity\_tracker.users.urls module
+-----------------------------------
+
+.. automodule:: infinity_tracker.users.urls
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+infinity\_tracker.users.views module
+------------------------------------
+
+.. automodule:: infinity_tracker.users.views
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: infinity_tracker.users
+   :members:
+   :undoc-members:
+   :show-inheritance:

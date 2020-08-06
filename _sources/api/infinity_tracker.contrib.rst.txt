@@ -1,0 +1,18 @@
+infinity\_tracker.contrib package
+=================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   infinity_tracker.contrib.sites
+
+Module contents
+---------------
+
+.. automodule:: infinity_tracker.contrib
+   :members:
+   :undoc-members:
+   :show-inheritance:

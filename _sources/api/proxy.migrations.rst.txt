@@ -1,0 +1,10 @@
+proxy.migrations package
+========================
+
+Module contents
+---------------
+
+.. automodule:: proxy.migrations
+   :members:
+   :undoc-members:
+   :show-inheritance:

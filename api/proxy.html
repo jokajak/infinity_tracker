@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proxy package &#8212; Carrier Infinity Management  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="proxy-package">
+<h1>proxy package<a class="headerlink" href="#proxy-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="proxy.migrations.html">proxy.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="proxy.migrations.html#module-proxy.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-proxy.admin">
+<span id="proxy-admin-module"></span><h2>proxy.admin module<a class="headerlink" href="#module-proxy.admin" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-proxy.apps">
+<span id="proxy-apps-module"></span><h2>proxy.apps module<a class="headerlink" href="#module-proxy.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="proxy.apps.AppConfig">
+<em class="property">class </em><code class="sig-prename descclassname">proxy.apps.</code><code class="sig-name descname">AppConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.apps.AppConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="py attribute">
+<dt id="proxy.apps.AppConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'app'</em><a class="headerlink" href="#proxy.apps.AppConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-proxy.models">
+<span id="proxy-models-module"></span><h2>proxy.models module<a class="headerlink" href="#module-proxy.models" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-proxy.tests">
+<span id="proxy-tests-module"></span><h2>proxy.tests module<a class="headerlink" href="#module-proxy.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-proxy.urls">
+<span id="proxy-urls-module"></span><h2>proxy.urls module<a class="headerlink" href="#module-proxy.urls" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-proxy.views">
+<span id="proxy-views-module"></span><h2>proxy.views module<a class="headerlink" href="#module-proxy.views" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="proxy.views.alive">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">alive</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.alive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle alive checks.</p>
+<p>This view handles proxying alive checks performed by the HVAC unit.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="proxy.views.default_handler">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">default_handler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">path</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.default_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle all other requests</p>
+<p>This view handles all other request types</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="proxy.views.proxy_request">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">proxy_request</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.proxy_request" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="proxy.views.release_notes">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">release_notes</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">uri</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.release_notes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle release note requests.</p>
+<p>Release note requests come in with a different URI as the path so they
+must be handled differently.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="proxy.views.systems_dealer">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">systems_dealer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">serial</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.systems_dealer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle system dealer posts.</p>
+<p>This view handles processing system status updates by the HVAC unit.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="proxy.views.systems_equipment_events">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">systems_equipment_events</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">serial</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.systems_equipment_events" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle system equipment events posts</p>
+<p>This view handles processing system status updates by the HVAC unit.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="proxy.views.systems_idu_config">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">systems_idu_config</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">serial</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.systems_idu_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle system In-Door Unit posts.</p>
+<p>This view handles processing system status updates by the HVAC unit.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="proxy.views.systems_notifications">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">systems_notifications</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">serial</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.systems_notifications" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle system notifications posts.</p>
+<p>This view handles processing system status updates by the HVAC unit.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="proxy.views.systems_odu_config">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">systems_odu_config</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">serial</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.systems_odu_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle system Out-Door Unit posts.</p>
+<p>This view handles processing system status updates by the HVAC unit.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="proxy.views.systems_overview">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">systems_overview</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">serial</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.systems_overview" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle system posts.</p>
+<p>This view handles processing system status updates by the HVAC unit.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="proxy.views.systems_profile">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">systems_profile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">serial</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.systems_profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle system profile posts.</p>
+<p>This view handles processing system status updates by the HVAC unit.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="proxy.views.systems_status">
+<code class="sig-prename descclassname">proxy.views.</code><code class="sig-name descname">systems_status</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">request</span></em>, <em class="sig-param"><span class="n">serial</span></em><span class="sig-paren">)</span><a class="headerlink" href="#proxy.views.systems_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle system status posts.</p>
+<p>This view handles processing system status updates by the HVAC unit.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-proxy">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-proxy" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Carrier Infinity Management</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../howto.html">How To - Project Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pycharm/configuration.html">Docker Remote Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../users.html">Users</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Jokajak.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/api/proxy.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
