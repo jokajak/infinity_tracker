@@ -31,6 +31,7 @@ def release_notes(request, uri=None):
     Release note requests come in with a different URI as the path so they
     must be handled differently.
     """
+    logger.info("Received release_notes request")
     headers = dict(request.headers)
     full_uri = "http{uri}".format(uri=uri)
     method = request.method
