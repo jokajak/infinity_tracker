@@ -6,7 +6,7 @@ authors = ["jokajak <jokajak@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.6.1,<4"
-Django = "^3.0.9"
+Django = "^3.1"
 django-environ = "^0.4.5"
 pytz = "2020.1"
 python-slugify = "4.0.1"
