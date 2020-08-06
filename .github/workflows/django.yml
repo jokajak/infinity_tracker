@@ -2,12 +2,16 @@ name: Django CI
 
 on:
   push:
-    branches: [ develop ]
-    paths_ignore:
+    branches:
+      - develop
+      - main
+    paths-ignore:
       - '.github/**'
   pull_request:
-    branches: [ develop ]
-    paths_ignore:
+    branches:
+      - develop
+      - main
+    paths-ignore:
       - '.github/**'
 env:
   POSTGRES_USER: postgres
