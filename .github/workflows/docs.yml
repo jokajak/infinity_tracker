@@ -43,6 +43,11 @@ jobs:
     - name: Install Python Dependencies
       run: poetry install
 
+    - name: Generate API docs
+      run: |
+        poetry run sphinx-apidoc -o docs/_source/api infinity_tracker/
+        poetry run sphinx-apidoc -o docs/_source/api proxy/
+
     - name: Build documentation
       run: poetry run make -C docs html
 
