@@ -27,11 +27,11 @@ This web application is designed with 3 different use cases:
 Django Apps
 ```````````
 
-* app: handles modeling an HVAC system
+* hvac: handles modeling an HVAC system
 * proxy: handles proxying requests to/from Carrier
 
-app
-'''
+hvac
+''''
 
 This application handles modeling an HVAC system. It is responsible for synchronizing the system status to the database. This application implements the REST API to be used by HomeAssistant and the frontend.
 
