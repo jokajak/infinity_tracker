@@ -47,6 +47,7 @@ jobs:
       run: |
         poetry run sphinx-apidoc -o docs/_source/api infinity_tracker/
         poetry run sphinx-apidoc -o docs/_source/api proxy/
+        poetry run sphinx-apidoc -o docs/_source/api hvac/
 
     - name: Build documentation
       run: poetry run make -C docs html
