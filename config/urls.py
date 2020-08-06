@@ -21,6 +21,7 @@ urlpatterns = [
     path("Alive", proxy_views.alive),
     path("manifest", proxy_views.default_handler),
     path("systems/", include("proxy.urls")),
+    path("http<path:uri>", proxy_views.release_notes),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS

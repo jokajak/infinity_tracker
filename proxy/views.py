@@ -25,6 +25,43 @@ def proxy_request(request):
 
 # Create your views here.
 @csrf_exempt
+def release_notes(request, uri=None):
+    """Handle release note requests.
+
+    Release note requests come in with a different URI as the path so they
+    must be handled differently.
+    """
+    headers = dict(request.headers)
+    full_uri = "http{uri}".format(uri=uri)
+    method = request.method
+    content_length = int(request.headers.get("Content-Length", 0) or 0)
+    logger.debug("{method}: {uri}".format(method=method, uri=full_uri))
+    headers["Content-Length"] = str(content_length)
+    s = Session()
+    req = Request(method, full_uri, headers=headers, data=request.body)
+    prepped = req.prepare()
+    r = s.send(prepped)
+    logger.debug("Response: {response}".format(response=r.content))
+    return r
+
+
+@csrf_exempt
+def default_handler(request, path=None):
+    """Handle all other requests
+
+    This view handles all other request types
+    """
+    logger.info("Unmanaged path: {path}".format(path=path))
+    r = proxy_request(request)
+    response = HttpResponse(
+        content=r.content,
+        status=r.status_code,
+        content_type=r.headers.get("Content-Type"),
+    )
+    return response
+
+
+@csrf_exempt
 def alive(request):
     """Handle alive checks.
 
@@ -100,12 +137,56 @@ def systems_dealer(request, serial):
 
 
 @csrf_exempt
-def default_handler(request, path=None):
-    """Handle all other requests
+def systems_notifications(request, serial):
+    """Handle system notifications posts.
 
-    This view handles all other request types
+    This view handles processing system status updates by the HVAC unit.
     """
-    logger.info("Unmanaged path: {path}".format(path=path))
+    r = proxy_request(request)
+    response = HttpResponse(
+        content=r.content,
+        status=r.status_code,
+        content_type=r.headers.get("Content-Type"),
+    )
+    return response
+
+
+@csrf_exempt
+def systems_idu_config(request, serial):
+    """Handle system In-Door Unit posts.
+
+    This view handles processing system status updates by the HVAC unit.
+    """
+    r = proxy_request(request)
+    response = HttpResponse(
+        content=r.content,
+        status=r.status_code,
+        content_type=r.headers.get("Content-Type"),
+    )
+    return response
+
+
+@csrf_exempt
+def systems_odu_config(request, serial):
+    """Handle system Out-Door Unit posts.
+
+    This view handles processing system status updates by the HVAC unit.
+    """
+    r = proxy_request(request)
+    response = HttpResponse(
+        content=r.content,
+        status=r.status_code,
+        content_type=r.headers.get("Content-Type"),
+    )
+    return response
+
+
+@csrf_exempt
+def systems_equipment_events(request, serial):
+    """Handle system equipment events posts
+
+    This view handles processing system status updates by the HVAC unit.
+    """
     r = proxy_request(request)
     response = HttpResponse(
         content=r.content,
