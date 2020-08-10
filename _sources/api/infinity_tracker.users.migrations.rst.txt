@@ -12,7 +12,6 @@ infinity\_tracker.users.migrations.0001\_initial module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

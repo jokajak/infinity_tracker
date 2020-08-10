@@ -60,7 +60,6 @@ infinity\_tracker.users.tests.test\_views module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

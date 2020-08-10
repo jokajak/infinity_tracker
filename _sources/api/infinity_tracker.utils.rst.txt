@@ -12,7 +12,6 @@ infinity\_tracker.utils.context\_processors module
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 

@@ -28,7 +28,6 @@ infinity\_tracker.contrib.sites.migrations.0003\_set\_site\_domain\_and\_name mo
    :undoc-members:
    :show-inheritance:
 
-
 Module contents
 ---------------
 
