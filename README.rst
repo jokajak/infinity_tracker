@@ -12,6 +12,9 @@ Carrier Infinity Management
 .. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
    :target: https://github.com/pre-commit/pre-commit
       :alt: pre-commit
+.. image:: https://img.shields.io/badge/security-bandit-yellow.svg
+    :target: https://github.com/PyCQA/bandit
+    :alt: Security Status
 
 Inspired by infinitude (https://github.com/nebulous/infinitude/). Please give them all credit for the idea.
 

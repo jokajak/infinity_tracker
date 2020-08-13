@@ -26,3 +26,11 @@ repos:
     hooks:
       - id: python-use-type-annotations  # force type annotations
       - id: python-check-blanket-noqa  # force specific noqa lines
+  - repo: https://github.com/PyCQA/pydocstyle.git
+    rev: '5.0.2'
+    hooks:
+      - id: pydocstyle
+  - repo: https://github.com/PyCQA/bandit
+    rev: '1.6.2' # Update me!
+    hooks:
+    - id: bandit
