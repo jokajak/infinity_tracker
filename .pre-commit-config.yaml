@@ -6,7 +6,8 @@ exclude: >
     .git|
     .tox|
     proxy.py|
-    tracker.py
+    tracker.py|
+    utils.py
   )
 default_stages: [commit]
 fail_fast: false
