@@ -12,6 +12,14 @@ hvac.migrations.0001\_initial module
    :undoc-members:
    :show-inheritance:
 
+hvac.migrations.0002\_auto\_20200830\_1421 module
+-------------------------------------------------
+
+.. automodule:: hvac.migrations.0002_auto_20200830_1421
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 
