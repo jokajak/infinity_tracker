@@ -26,7 +26,7 @@ repos:
       - id: black
         exclude: >
           (?x)^(
-            hvac/migrations/.*
+            .+/migrations/.*
           )
 
   - repo: https://gitlab.com/pycqa/flake8
