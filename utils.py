@@ -53,9 +53,10 @@ def extract_req_body(s):
 def get_current_temp(api_key, location_query):
     if not (api_key and location_query):
         return False
-    base_url = "http://api.wunderground.com/api/{}/".format(api_key)
-    url = "{}/geolookup/conditions/q/{}.json".format(base_url, location_query)
-    f = urllib2.urlopen(url)
+    url = "http://api.wunderground.com/api/{}/geolookup/conditions/q/{}.json".format(
+        api_key, location_query
+    )
+    f = urllib2.urlopen(url)  # nosec
     json_string = f.read()
     parsed_json = json.loads(json_string)
     temp_f = parsed_json["current_observation"]["temp_f"]

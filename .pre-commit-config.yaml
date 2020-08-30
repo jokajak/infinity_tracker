@@ -1,19 +1,33 @@
-exclude: 'docs|node_modules|migrations|.git|.tox'
+exclude: >
+  (?x)^(
+    docs|
+    node_modules|
+    migrations|
+    .git|
+    .tox|
+    proxy.py|
+    tracker.py|
+    utils.py
+  )
 default_stages: [commit]
-fail_fast: true
+fail_fast: false
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: master
+    rev: v3.2.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-yaml
 
   - repo: https://github.com/psf/black
-    rev: 19.10b0
+    rev: 20.8b1
     hooks:
       - id: black
+        exclude: >
+          (?x)^(
+            .+/migrations/.*
+          )
 
   - repo: https://gitlab.com/pycqa/flake8
     rev: 3.8.3
@@ -22,15 +36,25 @@ repos:
         args: ['--config=setup.cfg']
         additional_dependencies: [flake8-isort]
   - repo: https://github.com/pre-commit/pygrep-hooks
-    rev: v1.5.1  # Use the ref you want to point at
+    rev: v1.6.0  # Use the ref you want to point at
     hooks:
       - id: python-use-type-annotations  # force type annotations
       - id: python-check-blanket-noqa  # force specific noqa lines
   - repo: https://github.com/PyCQA/pydocstyle.git
-    rev: '5.0.2'
+    rev: '5.1.1'
     hooks:
       - id: pydocstyle
+        files: >
+          (?x)^(
+            hvac/__init__.py|
+            hvac/models.py
+          )
   - repo: https://github.com/PyCQA/bandit
     rev: '1.6.2' # Update me!
     hooks:
     - id: bandit
+      exclude: >
+        (?x)^(
+          .+test_.+.py|
+          merge_production_dotenvs_in_dotenv.py
+        )
