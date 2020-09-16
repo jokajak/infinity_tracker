@@ -301,7 +301,7 @@ description = "Extensions for Django"
 name = "django-extensions"
 optional = false
 python-versions = ">=3.5"
-version = "3.0.6"
+version = "3.0.8"
 
 [[package]]
 category = "main"
@@ -1209,7 +1209,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "5abe2b21d6eb5a14adb37a757eff989d02da03544a1ed33a295e16421caa9ca5"
+content-hash = "6915607f7d14fe4750b647ed291f5715aa1bfe67e4c580ade38ce261632afef4"
 lock-version = "1.0"
 python-versions = ">=3.6.1,<4"
 
@@ -1265,7 +1265,6 @@ bandit = [
     {file = "bandit-1.6.2.tar.gz", hash = "sha256:41e75315853507aa145d62a78a2a6c5e3240fe14ee7c601459d0df9418196065"},
 ]
 black = [
-    {file = "black-20.8b1-py3-none-any.whl", hash = "sha256:70b62ef1527c950db59062cda342ea224d772abdf6adc58b86a45421bab20a6b"},
     {file = "black-20.8b1.tar.gz", hash = "sha256:1c02557aa099101b9d21496f8a914e9ed2222ef70336404eeeac8edba836fbea"},
 ]
 certifi = [
@@ -1393,8 +1392,8 @@ django-environ = [
     {file = "django_environ-0.4.5-py2.py3-none-any.whl", hash = "sha256:c57b3c11ec1f319d9474e3e5a79134f40174b17c7cc024bbb2fad84646b120c4"},
 ]
 django-extensions = [
-    {file = "django-extensions-3.0.6.tar.gz", hash = "sha256:59df0c4dfe93bffdbdeeb474633ef7654589c9ccc6dcd1f34605198f5e2ede05"},
-    {file = "django_extensions-3.0.6-py2.py3-none-any.whl", hash = "sha256:ec7f3aa9d51bb00f84099c3a71e5090984b7bcdcad247407106250642c23d722"},
+    {file = "django-extensions-3.0.8.tar.gz", hash = "sha256:a67747508ec39583892fbddf57e0b66b3f332a885ef5520698bc2e1cb351955a"},
+    {file = "django_extensions-3.0.8-py3-none-any.whl", hash = "sha256:c7c2ca48ccc2ecc4427c908cd3a6dc114fc7534092de51209b02f84ccafe648b"},
 ]
 django-model-utils = [
     {file = "django-model-utils-4.0.0.tar.gz", hash = "sha256:adf09e5be15122a7f4e372cb5a6dd512bbf8d78a23a90770ad0983ee9d909061"},
