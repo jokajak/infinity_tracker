@@ -804,7 +804,7 @@ python-versions = ">=3.5"
 
 [[package]]
 name = "pyjwt"
-version = "2.0.0"
+version = "2.0.1"
 description = "JSON Web Token implementation in Python"
 category = "main"
 optional = false
@@ -851,14 +851,14 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xm
 
 [[package]]
 name = "pytest-cov"
-version = "2.10.1"
+version = "2.11.0"
 description = "Pytest plugin for measuring coverage."
 category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [package.dependencies]
-coverage = ">=4.4"
+coverage = ">=5.2.1"
 pytest = ">=4.6"
 
 [package.extras]
@@ -1292,7 +1292,7 @@ testing = ["jaraco.itertools", "func-timeout"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.6.1,<4"
-content-hash = "54eebe5f9c40821548ed39a652df6a1cd7a1f4c0dc649035b6aa6ef38761e252"
+content-hash = "165f9307701aacbd1eff3b250e4015d06dbf37f8374e4b6473fe796011ca1ebb"
 
 [metadata.files]
 alabaster = [
@@ -1743,8 +1743,8 @@ pygments = [
     {file = "Pygments-2.6.1.tar.gz", hash = "sha256:647344a061c249a3b74e230c739f434d7ea4d8b1d5f3721bc0f3558049b38f44"},
 ]
 pyjwt = [
-    {file = "PyJWT-2.0.0-py3-none-any.whl", hash = "sha256:5c2ff2eb27d7e342dfc3cafcc16412781f06db2690fbef81922b0172598f085b"},
-    {file = "PyJWT-2.0.0.tar.gz", hash = "sha256:7a2b271c6dac2fda9e0c33d176c4253faba2c6c6b3a99c7f28a32c3c97522779"},
+    {file = "PyJWT-2.0.1-py3-none-any.whl", hash = "sha256:b70b15f89dc69b993d8a8d32c299032d5355c82f9b5b7e851d1a6d706dffe847"},
+    {file = "PyJWT-2.0.1.tar.gz", hash = "sha256:a5c70a06e1f33d81ef25eecd50d50bd30e34de1ca8b2b9fa3fe0daaabcf69bf7"},
 ]
 pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
@@ -1755,8 +1755,8 @@ pytest = [
     {file = "pytest-6.2.1.tar.gz", hash = "sha256:66e419b1899bc27346cb2c993e12c5e5e8daba9073c1fbce33b9807abc95c306"},
 ]
 pytest-cov = [
-    {file = "pytest-cov-2.10.1.tar.gz", hash = "sha256:47bd0ce14056fdd79f93e1713f88fad7bdcc583dcd7783da86ef2f085a0bb88e"},
-    {file = "pytest_cov-2.10.1-py2.py3-none-any.whl", hash = "sha256:45ec2d5182f89a81fc3eb29e3d1ed3113b9e9a873bcddb2a71faaab066110191"},
+    {file = "pytest-cov-2.11.0.tar.gz", hash = "sha256:e90e034cde61dacb1394639a33f449725c591025b182d69752c1dd0bfec639a7"},
+    {file = "pytest_cov-2.11.0-py2.py3-none-any.whl", hash = "sha256:626a8a6ab188656c4f84b67d22436d6c494699d917e567e0048dda6e7f59e028"},
 ]
 pytest-django = [
     {file = "pytest-django-4.1.0.tar.gz", hash = "sha256:26f02c16d36fd4c8672390deebe3413678d89f30720c16efb8b2a6bf63b9041f"},
