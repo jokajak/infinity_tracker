@@ -39,21 +39,21 @@
 <span id="infinity-tracker-users-migrations-0001-initial-module"></span><h2>infinity_tracker.users.migrations.0001_initial module<a class="headerlink" href="#module-infinity_tracker.users.migrations.0001_initial" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="infinity_tracker.users.migrations.0001_initial.Migration">
-<em class="property">class </em><code class="sig-prename descclassname">infinity_tracker.users.migrations.0001_initial.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#infinity_tracker.users.migrations.0001_initial.Migration" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">infinity_tracker.users.migrations.0001_initial.</span></code><code class="sig-name descname"><span class="pre">Migration</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#infinity_tracker.users.migrations.0001_initial.Migration" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
 <dl class="py attribute">
 <dt id="infinity_tracker.users.migrations.0001_initial.Migration.dependencies">
-<code class="sig-name descname">dependencies</code><em class="property"> = [('auth', '0008_alter_user_username_max_length')]</em><a class="headerlink" href="#infinity_tracker.users.migrations.0001_initial.Migration.dependencies" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">dependencies</span></code><em class="property"> <span class="pre">=</span> <span class="pre">[('auth',</span> <span class="pre">'0008_alter_user_username_max_length')]</span></em><a class="headerlink" href="#infinity_tracker.users.migrations.0001_initial.Migration.dependencies" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt id="infinity_tracker.users.migrations.0001_initial.Migration.initial">
-<code class="sig-name descname">initial</code><em class="property"> = True</em><a class="headerlink" href="#infinity_tracker.users.migrations.0001_initial.Migration.initial" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">initial</span></code><em class="property"> <span class="pre">=</span> <span class="pre">True</span></em><a class="headerlink" href="#infinity_tracker.users.migrations.0001_initial.Migration.initial" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt id="infinity_tracker.users.migrations.0001_initial.Migration.operations">
-<code class="sig-name descname">operations</code><em class="property"> = [&lt;CreateModel  name='User', fields=[('id', &lt;django.db.models.fields.AutoField&gt;), ('password', &lt;django.db.models.fields.CharField&gt;), ('last_login', &lt;django.db.models.fields.DateTimeField&gt;), ('is_superuser', &lt;django.db.models.fields.BooleanField&gt;), ('username', &lt;django.db.models.fields.CharField&gt;), ('first_name', &lt;django.db.models.fields.CharField&gt;), ('last_name', &lt;django.db.models.fields.CharField&gt;), ('email', &lt;django.db.models.fields.EmailField&gt;), ('is_staff', &lt;django.db.models.fields.BooleanField&gt;), ('is_active', &lt;django.db.models.fields.BooleanField&gt;), ('date_joined', &lt;django.db.models.fields.DateTimeField&gt;), ('name', &lt;django.db.models.fields.CharField&gt;), ('groups', &lt;django.db.models.fields.related.ManyToManyField&gt;), ('user_permissions', &lt;django.db.models.fields.related.ManyToManyField&gt;)], options={'verbose_name_plural': 'users', 'verbose_name': 'user', 'abstract': False}, managers=[('objects', &lt;django.contrib.auth.models.UserManager object&gt;)]&gt;]</em><a class="headerlink" href="#infinity_tracker.users.migrations.0001_initial.Migration.operations" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">operations</span></code><em class="property"> <span class="pre">=</span> <span class="pre">[&lt;CreateModel</span>&#160; <span class="pre">name='User',</span> <span class="pre">fields=[('id',</span> <span class="pre">&lt;django.db.models.fields.AutoField&gt;),</span> <span class="pre">('password',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('last_login',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('is_superuser',</span> <span class="pre">&lt;django.db.models.fields.BooleanField&gt;),</span> <span class="pre">('username',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('first_name',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('last_name',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('email',</span> <span class="pre">&lt;django.db.models.fields.EmailField&gt;),</span> <span class="pre">('is_staff',</span> <span class="pre">&lt;django.db.models.fields.BooleanField&gt;),</span> <span class="pre">('is_active',</span> <span class="pre">&lt;django.db.models.fields.BooleanField&gt;),</span> <span class="pre">('date_joined',</span> <span class="pre">&lt;django.db.models.fields.DateTimeField&gt;),</span> <span class="pre">('name',</span> <span class="pre">&lt;django.db.models.fields.CharField&gt;),</span> <span class="pre">('groups',</span> <span class="pre">&lt;django.db.models.fields.related.ManyToManyField&gt;),</span> <span class="pre">('user_permissions',</span> <span class="pre">&lt;django.db.models.fields.related.ManyToManyField&gt;)],</span> <span class="pre">options={'verbose_name_plural':</span> <span class="pre">'users',</span> <span class="pre">'verbose_name':</span> <span class="pre">'user',</span> <span class="pre">'abstract':</span> <span class="pre">False},</span> <span class="pre">managers=[('objects',</span> <span class="pre">&lt;django.contrib.auth.models.UserManager</span> <span class="pre">object&gt;)]&gt;]</span></em><a class="headerlink" href="#infinity_tracker.users.migrations.0001_initial.Migration.operations" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -63,16 +63,16 @@
 <span id="infinity-tracker-users-migrations-0002-auto-20200830-1421-module"></span><h2>infinity_tracker.users.migrations.0002_auto_20200830_1421 module<a class="headerlink" href="#module-infinity_tracker.users.migrations.0002_auto_20200830_1421" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="infinity_tracker.users.migrations.0002_auto_20200830_1421.Migration">
-<em class="property">class </em><code class="sig-prename descclassname">infinity_tracker.users.migrations.0002_auto_20200830_1421.</code><code class="sig-name descname">Migration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">app_label</span></em><span class="sig-paren">)</span><a class="headerlink" href="#infinity_tracker.users.migrations.0002_auto_20200830_1421.Migration" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">infinity_tracker.users.migrations.0002_auto_20200830_1421.</span></code><code class="sig-name descname"><span class="pre">Migration</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#infinity_tracker.users.migrations.0002_auto_20200830_1421.Migration" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
 <dl class="py attribute">
 <dt id="infinity_tracker.users.migrations.0002_auto_20200830_1421.Migration.dependencies">
-<code class="sig-name descname">dependencies</code><em class="property"> = [('users', '0001_initial')]</em><a class="headerlink" href="#infinity_tracker.users.migrations.0002_auto_20200830_1421.Migration.dependencies" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">dependencies</span></code><em class="property"> <span class="pre">=</span> <span class="pre">[('users',</span> <span class="pre">'0001_initial')]</span></em><a class="headerlink" href="#infinity_tracker.users.migrations.0002_auto_20200830_1421.Migration.dependencies" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt id="infinity_tracker.users.migrations.0002_auto_20200830_1421.Migration.operations">
-<code class="sig-name descname">operations</code><em class="property"> = [&lt;AlterField  model_name='user', name='first_name', field=&lt;django.db.models.fields.CharField&gt;&gt;]</em><a class="headerlink" href="#infinity_tracker.users.migrations.0002_auto_20200830_1421.Migration.operations" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">operations</span></code><em class="property"> <span class="pre">=</span> <span class="pre">[&lt;AlterField</span>&#160; <span class="pre">model_name='user',</span> <span class="pre">name='first_name',</span> <span class="pre">field=&lt;django.db.models.fields.CharField&gt;&gt;]</span></em><a class="headerlink" href="#infinity_tracker.users.migrations.0002_auto_20200830_1421.Migration.operations" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -140,7 +140,7 @@
       &copy;2020, Jokajak.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
