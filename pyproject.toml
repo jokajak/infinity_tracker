@@ -20,7 +20,7 @@ django-cors-headers = "3.7.0"
 whitenoise = "^5.2.0"
 requests = "^2.25.1"
 psycopg2 = "^2.8.6"
-defusedxml = "^0.6.0"
+defusedxml = "^0.7.1"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.11.1"
