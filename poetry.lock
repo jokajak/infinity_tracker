@@ -283,7 +283,7 @@ six = ">=1.4.0"
 
 [[package]]
 name = "django-crispy-forms"
-version = "1.11.1"
+version = "1.11.2"
 description = "Best way to have Django DRY forms"
 category = "main"
 optional = false
@@ -1293,7 +1293,7 @@ testing = ["jaraco.itertools", "func-timeout"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.6.1,<4"
-content-hash = "f99f5feb90d5c08c71316e9b82fb1467d605d15663dfa71a5c91ee237bfdc71a"
+content-hash = "2cfaa54b9d90ed08d327128986f6a78ca1f9c84b3c6bff0e68aff7250449150a"
 
 [metadata.files]
 alabaster = [
@@ -1480,8 +1480,8 @@ django-coverage-plugin = [
     {file = "django_coverage_plugin-1.8.0.tar.gz", hash = "sha256:d53cbf3828fd83d6b89ff7292c6805de5274e36411711692043e67bcde25ae0c"},
 ]
 django-crispy-forms = [
-    {file = "django-crispy-forms-1.11.1.tar.gz", hash = "sha256:5c600dea66e2f435f774fe2c4cacfb5b5eb9914dd6da0728edd174b95f6956fd"},
-    {file = "django_crispy_forms-1.11.1-py3-none-any.whl", hash = "sha256:2ea206f35a9554597b89315ea52737d32d2fd9f5304e79a469a08887aa0824b0"},
+    {file = "django-crispy-forms-1.11.2.tar.gz", hash = "sha256:88efa857ce6111bd696cc4f74057539a3456102fe9c3a3ece8868e1e4579e70a"},
+    {file = "django_crispy_forms-1.11.2-py3-none-any.whl", hash = "sha256:3db71ab06d17ec9d0195c086d3ad454da300ac268752ac3a4f63d72f7a490254"},
 ]
 django-debug-toolbar = [
     {file = "django-debug-toolbar-3.2.tar.gz", hash = "sha256:84e2607d900dbd571df0a2acf380b47c088efb787dce9805aefeb407341961d2"},
