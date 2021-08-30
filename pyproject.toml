@@ -23,7 +23,7 @@ psycopg2 = "^2.8.6"
 defusedxml = "^0.7.1"
 
 [tool.poetry.dev-dependencies]
-pre-commit = "^2.11.1"
+pre-commit = "^2.14.1"
 black = "^20.8b1"
 flake8 = "^3.9.0"
 pytest = "^6.2.2"
